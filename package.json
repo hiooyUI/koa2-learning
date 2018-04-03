@@ -5,10 +5,15 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "get": "node app-get.js",
+    "post": "node app-post.js",
     "debug": "node --inspect app.js",
     "debug-break": "node --inspect-brk app.js"
   },
-  "keywords": ["koa", "async"],
+  "keywords": [
+    "koa",
+    "async"
+  ],
   "author": "Nelsonkuang",
   "license": "MIT",
   "repository": {
@@ -16,6 +21,8 @@
     "url": "https://github.com/nelsonkuang/hello-koa2.git"
   },
   "dependencies": {
-    "koa": "2.5.0"
+    "koa": "2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0"
   }
 }
